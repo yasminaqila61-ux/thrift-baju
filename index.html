@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroVibe Thrift - Koleksi Baju Perempuan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --dark-brown: #3d2b1f;
+            --medium-brown: #5d4037;
+            --light-brown: #8d6e63;
+            --cream: #fdf5e6;
+            --accent-gold: #b08968;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--cream);
+            color: var(--dark-brown);
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .text-brown-primary { color: var(--dark-brown); }
+        .text-brown-medium { color: var(--medium-brown); }
+        .bg-brown-dark { background-color: var(--dark-brown); }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .nav-glass {
+            background: rgba(253, 245, 230, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(61, 43, 31, 0.1);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(61, 43, 31, 0.7), rgba(61, 43, 31, 0.3));
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-2xl font-serif font-bold tracking-wider text-brown-primary">RETRO<span class="text-accent-gold">VIBE</span></div>
+        <div class="hidden md:flex space-x-8 items-center uppercase text-xs tracking-widest font-bold text-brown-medium">
+            <a href="#home" class="hover:text-accent-gold transition">Beranda</a>
+            <a href="#katalog" class="hover:text-accent-gold transition">Katalog</a>
+            <a href="#about" class="hover:text-accent-gold transition">Tentang Kami</a>
+            <a href="https://wa.me/6283845612838" class="bg-brown-dark text-white px-6 py-2 rounded-full font-bold hover:bg-brown-medium transition">Hubungi Kami</a>
+        </div>
+        <div class="md:hidden text-2xl text-brown-primary">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-start px-6 md:px-20 pt-20 bg-[url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-no-repeat relative text-white">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 max-w-4xl text-left">
+            <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">Keanggunan <br><span class="text-accent-gold italic">Dalam Klasik</span></h1>
+            <p class="text-lg md:text-xl mb-10 text-gray-200 max-w-2xl">Pilihan busana perempuan yang dikurasi dengan hati. Temukan gaya vintage dan modern yang menceritakan kisahmu.</p>
+            <div class="flex flex-col md:flex-row gap-4">
+                <a href="#katalog" class="bg-accent-gold text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-brown-medium transition flex items-center justify-center shadow-lg">
+                    Lihat Koleksi <i class="fas fa-shopping-bag ml-2"></i>
+                </a>
+                <a href="https://wa.me/6283845612838" class="border-2 border-white text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-white hover:text-brown-dark transition flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2 text-xl"></i> Chat Admin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Preview -->
+    <section id="katalog" class="py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-serif mb-4 text-brown-primary">Koleksi Perempuan Terbaru</h2>
+            <p class="text-brown-medium mb-16 opacity-80">Gaya eksklusif untuk melengkapi penampilan harianmu.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Item 1: Blouse -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-xl border border-brown-medium/10">
+                    <div class="h-[450px] bg-gray-200 overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Baju Perempuan Vintage Blouse" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-brown-dark text-white text-xs font-bold px-3 py-1 rounded">VINTAGE</div>
+                    </div>
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold mb-1 text-brown-primary">Classic Silk Blouse</h4>
+                        <p class="text-sm text-brown-medium mb-3">Ukuran: M | Kondisi 9.5/10</p>
+                        <p class="text-accent-gold font-bold mb-4 text-lg">Rp 125.000</p>
+                        <a href="https://wa.me/6283845612838?text=Halo,%20saya%20tertarik%20dengan%20Classic%20Silk%20Blouse" class="block text-center border border-brown-dark text-brown-dark py-2 rounded-lg font-bold hover:bg-brown-dark hover:text-white transition">Pesan via WA</a>
+                    </div>
+                </div>
+
+                <!-- Item 2: Dress -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-xl border border-brown-medium/10">
+                    <div class="h-[450px] bg-gray-200 overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Baju Perempuan Floral Dress" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-brown-dark text-white text-xs font-bold px-3 py-1 rounded">ELEGANT</div>
+                    </div>
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold mb-1 text-brown-primary">Floral Summer Dress</h4>
+                        <p class="text-sm text-brown-medium mb-3">Ukuran: S-M | Kondisi 10/10</p>
+                        <p class="text-accent-gold font-bold mb-4 text-lg">Rp 165.000</p>
+                        <a href="https://wa.me/6283845612838?text=Halo,%20saya%20tertarik%20dengan%20Floral%20Summer%20Dress" class="block text-center border border-brown-dark text-brown-dark py-2 rounded-lg font-bold hover:bg-brown-dark hover:text-white transition">Pesan via WA</a>
+                    </div>
+                </div>
+
+                <!-- Item 3: Blazer/Outer -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-xl border border-brown-medium/10">
+                    <div class="h-[450px] bg-gray-200 overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1548624313-0396c75e4b1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Baju Perempuan Chic Outer" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-brown-dark text-white text-xs font-bold px-3 py-1 rounded">PREMIUM</div>
+                    </div>
+                    <div class="p-6 text-left">
+                        <h4 class="text-xl font-bold mb-1 text-brown-primary">Chic Oversized Blazer</h4>
+                        <p class="text-sm text-brown-medium mb-3">Ukuran: All Size | Kondisi 9/10</p>
+                        <p class="text-accent-gold font-bold mb-4 text-lg">Rp 195.000</p>
+                        <a href="https://wa.me/6283845612838?text=Halo,%20saya%20tertarik%20dengan%20Chic%20Oversized%20Blazer" class="block text-center border border-brown-dark text-brown-dark py-2 rounded-lg font-bold hover:bg-brown-dark hover:text-white transition">Pesan via WA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="about" class="py-24 bg-brown-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sustainability Fashion" class="rounded-3xl shadow-2xl border-4 border-accent-gold/20">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-serif mb-8">Kenapa Perempuan Pilih RetroVibe?</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="bg-accent-gold/20 p-4 rounded-xl h-fit">
+                                <i class="fas fa-magic text-accent-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1 text-accent-gold">Style Klasik & Unik</h4>
+                                <p class="text-gray-300">Setiap baju hanya ada satu. Kamu tidak akan menemukan kembaran di acara manapun.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="bg-accent-gold/20 p-4 rounded-xl h-fit">
+                                <i class="fas fa-hand-holding-heart text-accent-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1 text-accent-gold">Kualitas Higienis</h4>
+                                <p class="text-gray-300">Semua koleksi kami telah melalui proses laundry premium dan sterilisasi uap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 text-center">
+        <div class="container mx-auto px-6 max-w-2xl bg-white p-12 rounded-[3rem] shadow-2xl border border-brown-medium/5">
+            <h2 class="text-4xl font-serif font-bold mb-6 text-brown-primary">Miliki Koleksinya Sekarang</h2>
+            <p class="text-lg font-medium mb-10 text-brown-medium opacity-80">Kami mengunggah koleksi baru setiap minggu. Jangan sampai ketinggalan!</p>
+            <a href="https://wa.me/6283845612838" class="bg-accent-gold text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-brown-dark transition shadow-xl inline-flex items-center">
+                <i class="fab fa-whatsapp mr-3"></i> Chat Admin Sekarang
+            </a>
+            <p class="mt-6 text-brown-primary font-bold">Konsultasi Ukuran: 0838 4561 2838</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-brown-dark text-white border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-2xl font-serif font-bold">RETRO<span class="text-accent-gold">VIBE</span></div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-accent-gold transition"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-accent-gold transition"><i class="fab fa-tiktok text-2xl"></i></a>
+                </div>
+                <p class="text-sm text-gray-400">&copy; 2024 RetroVibe Thrift. Koleksi Perempuan Pilihan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WA Button (Mobile Only) -->
+    <a href="https://wa.me/6283845612838" class="md:hidden fixed bottom-6 right-6 bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-[100] animate-bounce">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
